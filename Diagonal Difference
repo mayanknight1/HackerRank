@@ -16,7 +16,7 @@ int main()
         }
     }
     
-    double sum_a=0,sum_b=0,result,sa,sb,r;
+    double sum_a=0,sum_b=0,result;
         for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
