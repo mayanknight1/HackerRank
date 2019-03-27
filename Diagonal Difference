@@ -8,18 +8,18 @@ int main()
     int n;
     cin>>n;
     int a[n][n],i,j;
-    for(i=0;i<3;i++)
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<3;j++)
+        for(j=0;j<n;j++)
         {
             cin>>a[i][j];
         }
     }
     
     double sum_a=0,sum_b=0,result,sa,sb,r;
-        for(i=0;i<3;i++)
+        for(i=0;i<n;i++)
     {
-        for(j=0;j<3;j++)
+        for(j=0;j<n;j++)
         {
             if(i==j)
             {
@@ -36,9 +36,7 @@ int main()
             
         }
     }
-    
-    sum_a = abs(sum_a);
-    sum_b = abs(sum_b);
+
     result = sum_a - sum_b;
     result = abs(result);
     cout<< result;
